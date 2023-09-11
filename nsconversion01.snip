@@ -1,0 +1,467 @@
+add responder action aCataloguetgi_eww_redirect redirect "\"http://eww.snclavalin.com/cws_it/accueil_catalog.asp\""
+add responder action aGenericDown respondwith "\"HTTP/1.0 200 OK\" +\"\\r\\n\\r\\n\" + \"<body bgcolor=#475e88><font color=FFFF00 size=6>Sorry, this service is presently not available.<hr>D&eacutesol&eacute, ce service n\'est pr&eacutesentement pas disponible.<hr>Lamentablemente este servicio no est&aacute disponible por el momento.\n<hr>\" + \"\\r\\n\""
+add responder action aRedirtoapps2 redirect "\"https://apps2.snclavalin.com\""
+add responder action aRedirtoslcapps redirect "\"https://slcapps.snclavalin.com\""
+add responder action aRedirtoapps redirect "\"https://apps.snclavalin.com\""
+add responder action aResetConnection respondwith "\"<html><center>You have reached the end of the Internet</center></html>\""
+add responder action aRedirtoeuapps redirect "\"https://euapps.snclavalin.com\""
+add responder action aRedirect_to_TGIContacts redirect "\"http://eww.snclavalin.com/cws_3551/General/GITServiceDesks_fr.asp\""
+add responder action aRedirect_to_GITContacts redirect "\"http://eww.snclavalin.com/cws_3551/General/GITServiceDesks_en.asp\""
+add responder action aITCatalog_Redirect redirect "\"http://eww.snclavalin.com/cws_it/home_catalog.asp\""
+add responder action aCatalogueTI_Redirect redirect "\"http://eww.snclavalin.com/cws_it/accueil_catalog.asp\""
+add responder action aGitCatalog_eww_redirect redirect "\"https://eww.snclavalin.com/cws_it/home_catalog.asp\""
+add responder action aRedirtoeww2_Comm redirect "\"https://eww2.snclavalin.com/comm/\""
+add responder action aRedirectTogpspreSSLLogin redirect "\"https://gpspre.snclavalin.com/sso/jsp/snc_frameset.jsp\""
+add responder action aRedirectToGPSSSLLogin redirect "\"https://gps.snclavalin.com/sso/jsp/snc_frameset.jsp\""
+add responder action aredirect_to_root redirect "\"/\""
+add responder action aStay_here redirect "\"/\"+ HTTP.REQ.URL"
+add responder action aStayHere_EN redirect "\"https://eww.snclavalin.com/default_en.asp\""
+add responder action aStay_here_FR redirect "\"https://eww.snclavalin.com/default_fr.asp\""
+add responder action aStay_here_ES redirect "\"https://eww.snclavalin.com/default_es.asp\""
+add responder action aRespond_NoTimeSheet_FR respondwith q{"<script language='javascript'>alert('La feuille de temps est accessible du r\\u00E9seau interne de SNC-Lavalin seulement');  history.back()</script><br>"}
+add responder action aRespond_noebs respondwith "\"<!doctype=html><font size=5><script>\nfunction goBack() {    window.history.back() }\n</script>Oracle applications are not available <hr>Les applications Oracle  ne sont pas accessibles <br><button onclick=\'goBack()\'>Ret.</button>\""
+add responder action aRedirect_to_NOebs redirect "\"/noebs\""
+add responder action aRespond_NoTimeSheet_EN respondwith "\"<script language=\'javascript\'>history.back()</script>\""
+add responder action aStay_Here_ respondwith "\"<script language=\'javascript\'>history.back()</script>\""
+add responder action aNoTimesheet_FR respondwithhtmlpage notimesheet_FR.html
+add responder action aNoTimesheet_EN respondwithhtmlpage notimesheet_EN.html
+add responder action aCDS_Redirect redirect "\"https://csc.snclavalin.com/sites/cds/WebPartPages/RedirectionPageGITCDS.aspx\""
+add responder action aCsb_Redir_FR redirect "\"https://cataloguetgi.snclavalin.com/\""
+add responder action aCsb_Redir_EN redirect "\"https://gitcatalog.snclavalin.com/\""
+add responder action aCSC_GitCat_Geo_redir redirect "\"https://csc.snclavalin.com/git/GIT_Serv_catalog/Lists/Services/CoreByGeographicAvailability.aspx\""
+add responder action aCSC_GitCat_Geo_redir_FR redirect "\"https://csc.snclavalin.com/git/Catalogue_des_services_TGI/Lists/Services/ServicesClesDisponibiliteGeographique.aspx\""
+add responder action aCSC_GitCat_Mobile_redir_FR redirect "\"https://csc.snclavalin.com/git/Catalogue_des_services_TGI/Lists/Services/SolutionsMobilite.aspx\""
+add responder action aCSC_GitCat_Training_redir redirect "\"https://csc.snclavalin.com/git/GIT_Serv_catalog/Lists/Services/TrainingReferenceMaterial.aspx\""
+add responder action aCSC_GitCat_Training_redir_FR redirect "\"https://csc.snclavalin.com/git/Catalogue_des_services_TGI/Lists/Services/FormationMaterielReference.aspx\""
+add responder action aCSCGitCat_Alpha_redir redirect "\"https://csc.snclavalin.com/git/GIT_Serv_catalog/Lists/Services/CoreAlphabeticOrder.aspx\""
+add responder action aCSCGitCat_Alpha_redir_FR redirect "\"https://csc.snclavalin.com/git/Catalogue_des_services_TGI/Lists/Services/ServicesClesOrdreAlphabetique.aspx\""
+add responder action aGPDSP_Redirect redirect "\"https://csc.snclavalin.com/sites/cds/WebPartPages/RedirectionPageGPDSP.aspx \""
+add responder action aTGIRedir redirect "\"https://eww.snclavalin.com/cws_IT/default_fr.asp\""
+add responder action aGITRedir redirect "\"https://eww.snclavalin.com/cws_IT/default_EN.asp\""
+add responder action aAddOwa redirect "\"https://\"+ HTTP.REQ.HOSTNAME+\"/owa\""
+add responder action aPMGP_to_EUPMGP redirect "\"https://eu-pmgp.snclavalin.com\"+ HTTP.REQ.URL"
+add responder action aPMGP_to_EUPMGP_http redirect "\"http://eu-pmgp.snclavalin.com\"+ HTTP.REQ.URL"
+add responder action aHttp_to_https redirect "\"https://\"+ HTTP.REQ.HOSTNAME + HTTP.REQ.URL"
+add responder action aAddRPC respondwith "\"https://\"+HTTP.REQ.HOSTNAME+\"/rpc\""
+add responder action aAdd_Ess respondwith "\"https://\"+ HTTP.REQ.HOSTNAME+\"/ess\""
+add responder action aNoPDM respondwithhtmlpage PdmMaintenance
+add responder action aCitrixLogonPoint_redirect respondwith "\"https://apps.snclavalin.com/\""
+add responder action aHttps_to_http redirect "\"http://\" + HTTP.REQ.HOSTNAME+ HTTP.REQ.URL"
+add responder action aSuiveznous_Redirect redirect "\"http://www.snclavalin.com/fr/ethics-compliance/\""
+add responder action aFollowus_redirect redirect "\"http://www.snclavalin.com/en/ethics-compliance/\""
+add responder action aWecareRedirect_EN redirect "\"http://www.snclavalin.com/en/about-us/we-care.aspx\""
+add responder action aWecareRedirect_FR redirect "\"http://www.snclavalin.com/fr/about-us/we-care.aspx\""
+add responder action aCommsintro_redirect redirect "\"http://www2.snclavalin.com\" + HTTP.REQ.URL"
+add responder action aAddAuth redirect "\"https://\" +HTTP.REQ.HOSTNAME+ HTTP.REQ.URL+\"?auth=\" + HTTP.REQ.HEADER(\"Authorization\")"
+add responder action aAddess_http redirect "\"http://\"+HTTP.REQ.HOSTNAME+\"/ess\""
+add responder action aAccpac_AddEss redirect "\"https://\"+HTTP.REQ.HOSTNAME+\"/ess\""
+add responder action aIndexPhpEN_redirect redirect "\"http://www.snclavalin.com/en/\""
+add responder action aIndexphpFR_redirect redirect "\"http://www.snclavalin.com/fr/\""
+add responder action aPHP_RedirAll redirect "\"http://www.snclavalin.com\""
+add responder action "a AddEndingSlash" redirect "\"http://www.snclavalin.com\"+ HTTP.REQ.URL + \"/\""
+add responder action aCSC_coppst_redir redirect "\"/sites/coppst/\"+ HTTP.REQ.URL.AFTER_STR(\"coppst/\")"
+add responder action aRespondWithNotAllowed respondwith "\"<center>Not allowed</center>\""
+add responder action "a EWW_projects" redirect "\"/en/projects/\""
+add responder action aEww_projets redirect "\"/fr/projects/\""
+add responder action aEww_followus redirect "\"/en/ethics-compliance/\""
+add responder action aEww_suiveznous redirect "\"/fr/ethics-compliance/\""
+add responder action awww_mining_redirect redirect "\"http://www.snclavalin.com/en/mining-metallurgy\""
+add responder action aOurProjects redirect "\"http://www.snclavalin.com/en/projects/\""
+add responder action aNosProjets redirect "\"http://www.snclavalin.com/fr/projects/\""
+add responder action awwwedirect redirect "\"http://www.snclavalin.com\"+ HTTP.REQ.URL"
+add responder action aEthics_en_redir redirect "\"/en/ethics-compliance/\""
+add responder action aEthics_fr_redir redirect "\"/fr/ethics-compliance/\""
+add responder action aWelcomeRedirect redirect "\"http://kentz.snclavalin.com/\""
+add responder action aEww_power redirect "\"/en/power\""
+add responder action aEww_GotoEnergie redirect "\"/fr/energie\""
+add responder action aNuclear redirect "\"/en/nuclear\""
+add responder action aEnergieNucleaire redirect "\"/fr/energie-nucleaire\""
+add responder action aEnvironment_redirect redirect "\"http://www.snclavalin.com/en/environment-water\""
+add responder action aEnvironnement_redirect redirect "\"http://www.snclavalin.com/fr/environnement-eau\""
+add responder action aSDL_capital_EN redirect "\"/en/infrastructure-concession-investments\""
+add responder action aSDL_capital_FR redirect "\"/fr/investissements-concessions-infrastructure\""
+add responder action aEWW_http_https redirect "\"https://eww.snclavalin.com\" + HTTP.REQ.URL"
+add responder action awww_candu2nuclear redirect "\"/en/nuclear\""
+add responder action awww_nucleaire2energienucleaire redirect "\"/fr/energie-nucleaire\""
+add responder action aGPS_Maintenance redirect "\"http://142.242.14.122/\""
+add responder action aAdd_snclavalindotcom respondwith "HTTP.REQ.HOSTNAME +\".snclavalin.com\"+HTTP.REQ.URL"
+add responder action aAdd_snclavalinFQDN redirect "HTTP.REQ.HOSTNAME +\".snclavalin.com\"+HTTP.REQ.URL"
+add responder action aChooselanguage respondwith "\"<script type=\'text/javascript\'>\nvar lng =window.navigator.userLanguage.substring(0,2);\nif (lng == \'fr\') {\nwindow.location=\'/fr/\';\n} else {\nwindow.location=\'/en/\';\n}\n</script>\""
+add responder action aChooselanguage_notIE respondwith "\"<script type=\'text/javascript\'>\nvar lng =window.navigator.language.substr(0,2);\nif (lng == \'fr\') {\nwindow.location=\'/fr/\';\n} else {\nwindow.location=\'/en/\';\n}\n</script>\""
+add responder action aWWW_Romania redirect "\"/en/europe\""
+add responder action aKentz_ethic redirect "\"https://eww.snclavalin.com/ethics-compliance/default_en.asp\""
+add responder action aKentz_redirect_eww redirect "\"https://eww.snclavalin.com/oil-gas/default_en.asp\""
+add responder action aChooselanguage_gts respondwith "\"<script type=\'text/javascript\'>\nvar lng =window.navigator.userLanguage.substring(0,2);\nif (lng == \'fr\') {\nwindow.location=\'fr/market-services/training.aspx\';\n} else {\nwindow.location=\'/en/training\';\n}\n</script>\""
+add responder action aChooselanguage_gts_notIE respondwith "\"<script type=\'text/javascript\'>\nvar lng =window.navigator.language.substr(0,2);\nif (lng == \'fr\') {\nwindow.location=\'fr/market-services/training.aspx\';\n} else {\nwindow.location=\'/en/training\';\n}\n</script>\""
+add responder action aAnnualRepport2014_en_redir redirect "\"/en/news/publications/annual-reports/2014/index.html\""
+add responder action aAnnualRepport2014_fr_redir redirect "\"/fr/news/publications/annual-reports/2014/index.html\""
+add responder action aEDMS_redir redirect "\"/cp\""
+add responder action aWorkday_redir redirect "\"https://wd3.myworkday.com/slihrms/login.flex\""
+add responder action aPCMS_redir redirect "\"/ecosys\""
+add responder action aVideozoneRedirDelete respondwith "\"https://snc.mc.wg1.kontiki.com/\""
+add responder action aVideozoneRedir redirect "\"https://snc.mc.wg1.kontiki.com/\""
+add responder action aInfofinanceRedirect redirect "\"https://public.snclavalin.com/gfssc\""
+add responder action aGastech2015Redir redirect "\"http://www2.snclavalin.com/gastech2015\""
+add responder action aRailTransit_EN redirect "\"http://www.snclavalin.com/en/market-services/infrastructure/rail-transit/index.aspx\""
+add responder action aRailTransit_FR redirect "\"http://www.snclavalin.com/fr/market-services/infrastructure/rail-transit/index.aspx\""
+add responder action aMarkview_redir redirect "\"/markview/mvt_mv_home.home\""
+add responder action aMaintenanceCorpo_redir redirect "\"https://maintenance.snclavalin.com/corp\""
+add responder action aJV-Training_redir redirect "\"/LM\""
+add responder action aRedirectGlobal-elearning redirect "\"https://elearning.snclavalin.com/4114/index.html\""
+add responder action aRedirectGp-elearning redirect "\"https://elearning.snclavalin.com/4126/index.html\""
+add responder action aRedirectPmsystems redirect "\"https://elearning.snclavalin.com/4050/index.html\""
+add responder action aRedirect_to_TD_oil_and_gas redirect "\"http://infozone.snclavalin.com/en/sectors-functions/sectors/oil-gas/\""
+add responder action aSPL_Paris_Redirect redirect "\"https://spl.snclavalin.com/it/GlobalSecurity/Paris\""
+add responder action aNoCSC respondwith "\"<!doctype html><font size=5><CENTER>Veuillez noter que les sites de Collaboration seront non disponibles aujourd\'hui entre 20h00 et 02h00.<hr>Please note the Collaboration sites will not be available today between 8h00PM and 02h00AM </CENTER></font>\""
+add responder action aNoCSB respondwith "\"<!doctype html><font size=5><CENTER>Veuillez noter que les sites de Collaboration seront non disponibles aujourd\'hui entre 20h00 et 02h00.<hr>Please note the Collaboration sites will not be available today between 8h00PM and 02h00AM </CENTER></font>\""
+add responder action aVideozoneRedirNew redirect "\"https://snc.mc.wg1.kontiki.com/\""
+add responder action aRedirectTo911 redirect "\"https://spa.snclavalin.com/sites/businessresilience\""
+add responder action aRedirectToBusinessresillience redirect "\"https://spa.snclavalin.com/sites/businessresilience\""
+add responder action SharePoint_2013_http_to_https_action redirect "\"https://\" + HTTP.REQ.HOSTNAME+ HTTP.REQ.URL"
+add responder action aMaintenanceInfozone_redir redirect "\"https://maintenance.snclavalin.com/intranet\""
+add responder action resA_CrosslinxAuth redirect "\"https://crosslinxauth.snclavalin.com/vpn/custom_crosslinx/tmindex.html\""
+add responder action aRes_Protransbc redirect "\"http://canadaline.snclavalin.com\" "
+add responder action resAEthicsRUL redirect "HTTP.REQ.URL.SET_TEXT_MODE(IGNORECASE).MAP_STRING(\"strMEthicsRUL\")" -responseStatusCode 302
+add responder action aRedirect_to_smartinvest redirect "\"http://smartinvestmentplanning.net\"" -responseStatusCode 302
+add responder action aRedirect_to_rehabilitation4sewers redirect "\"https://rehabilitationautomationtoolforsewers.com/\"" -responseStatusCode 302
+add responder action aRew_ReplaceSnclavalin redirect "HTTP.REQ.HOSTNAME.SET_TEXT_MODE(IGNORECASE).MAP_STRING(\"strMsnclavalinURL\")" -responseStatusCode 302
+add responder action resA_HTTP_to_HTTPS redirect "\"https://\" + HTTP.REQ.HOSTNAME.HTTP_URL_SAFE + HTTP.REQ.URL.PATH_AND_QUERY.HTTP_URL_SAFE" -responseStatusCode 302
+add responder action aRedirectpdmc redirect "HTTP.REQ.URL.MAP_STRING(\"mRedirectpdmc\")" -responseStatusCode 302
+add responder action resA_HTTP_to_HTTPS_Enovia redirect "\"https://enovia.snclavalin.com\" + HTTP.REQ.URL.PATH_AND_QUERY.HTTP_URL_SAFE" -responseStatusCode 302
+add responder action resA_HTTP_to_HTTPS_8443 redirect "\"https://\" + HTTP.REQ.HOSTNAME.HTTP_URL_SAFE + HTTP.REQ.URL.PATH_AND_QUERY.HTTP_URL_SAFE" -responseStatusCode 302
+add responder action aRew_ReplaceSnclavalin.com redirect "HTTP.REQ.HOSTNAME.SET_TEXT_MODE(IGNORECASE).MAP_STRING(\"strMsnclavalinweb\")" -responseStatusCode 302
+add responder action aRedirtwww.investisseurs_Comm redirect "\"https://www.snclavalin.com/fr-FR/investors\"" -responseStatusCode 302
+add responder action aRedirtwww.investors_Comm redirect "\"https://www.snclavalin.com/en/investors\"" -responseStatusCode 302
+add responder action aRedirtwww.qualitas_Comm redirect "\"https://www.snclavalin.com\"" -responseStatusCode 302
+add responder action aRedirtwww.sncfr_Comm redirect "\"https://www.snclavalin.com/fr-FR\"" -responseStatusCode 302
+add responder action Aalberta_eww_redirect redirect "\"http://infozone.snclavalin.com/en/sectors-functions/sectors/oil-gas/\"" -responseStatusCode 302
+add responder action Avancouver_eww_redirect redirect "\"http://infozone.snclavalin.com\"" -responseStatusCode 302
+add responder action aRedirect_to_TD_power redirect "\"http://infozone.snclavalin.com/en/\"" -responseStatusCode 302
+add responder action rA__pdmc_folder redirect "HTTP.REQ.URL.PATH_AND_QUERY.SET_TEXT_MODE(IGNORECASE).SET_TEXT_MODE(NOURLENCODED).MAP_STRING(\"SM_PDMC_folder\")" -responseStatusCode 302
+add responder action aBoutique redirect "\"http://www.snclavalin.com\"" -responseStatusCode 302
+add responder action respondwith403 respondwith "\"HTTP/1.1 403 Forbidden\r\n\r\n\""
+add responder action aWow.snclavalin.com_Redirect redirect "\" https://www.globoforce.net/microsites/motivation/SSOEntryPoint?client=sncl\"" -responseStatusCode 302
+add responder action Ra_infozone redirect "\"https://spl.snclavalin.com/corpo/Ethics-Compliance/CoC21/Lists/2020%20CoC%20Certification%20Exemptions/NewForm.aspx\"" -responseStatusCode 302
+add responder action resA_concurexpense.snclavalin.com_Redirect redirect "\"https://myapps.microsoft.com/signin/Concur%20Expense%20Prod/fe9605bb-edc0-4596-9d8c-b5563d512e22?tenantId=87d70b0f-5efc-4991-a065-e205bc3db308\"" -responseStatusCode 301
+add responder action aRedirect_PAS_Maintenance redirect "\"https://snclavalin.sharepoint.com/sites/ITBusinessSystemsUserPortal/SitePages/MAINTENANCE-ALERT.aspx\"" -responseStatusCode 302
+add responder action redirect_action_rmt.snclavalin.com redirect "\"https://arm.snclavalin.com/arm\"" -responseStatusCode 302
+add responder action pdmc_regress_2013_redirect redirect "\"https://snclgroup.sharepoint.com/sites/CollabSandbox/Shared%20Documents/Forms/AllItems.aspx\"\n" -responseStatusCode 302
+add responder action aPDMC_Redir_remwip redirect "\"https://snclgroup.sharepoint.com/sites/NouvLR/remwip\"" -responseStatusCode 302
+add responder action aPDMC_Redir_rem40eng redirect "\"https://snclgroup.sharepoint.com/sites/NouvLR/Public/Public\"" -responseStatusCode 302
+add responder action aPDMC_Redir_rempub redirect "\"https://snclgroup.sharepoint.com/sites/NouvLR/Public\"" -responseStatusCode 302
+add responder action aPDMC_Redir_rem60 redirect "\"https://snclgroup.sharepoint.com/sites/NouvLR/Construction/Construction\"" -responseStatusCode 302
+add responder action aPDMC_Redir_rem6T redirect "\"https://snclgroup.sharepoint.com/sites/NouvLR/Construction/Construction\"" -responseStatusCode 302
+add responder action aPDMC_Redir_rem601 redirect "\"https://snclgroup.sharepoint.com/sites/NouvLR/Construction/Construction\"" -responseStatusCode 302
+add responder action aPDMC_Redir_rem602 redirect "\"https://snclgroup.sharepoint.com/sites/NouvLR/Construction/Construction\"" -responseStatusCode 302
+add responder action aPDMC_Redir_rem603 redirect "\"https://snclgroup.sharepoint.com/sites/NouvLR/Construction/Construction\"" -responseStatusCode 302
+add responder action aPDMC_Redir_rem605 redirect "\"https://snclgroup.sharepoint.com/sites/NouvLR/Construction/Construction\"" -responseStatusCode 302
+add responder action aPDMC_Redir_rem606 redirect "\"https://snclgroup.sharepoint.com/sites/NouvLR/Construction/Construction\"" -responseStatusCode 302
+add responder action aPDMC_Redir_rem68 redirect "\"https://snclgroup.sharepoint.com/sites/NouvLR/Construction/Construction\"" -responseStatusCode 302
+add responder action aPDMC_Redir_pjrev redirect "\"https://snclgroup.sharepoint.com/sites/NouvLR/pjrev\"" -responseStatusCode 302
+add responder policy pRedir_to_CatalogueTGI_eww "HTTP.REQ.HOSTNAME.EQ(\"cataloguetgi.snclavalin.com\") || HTTP.REQ.HOSTNAME.EQ(\"cataloguetgi.\")" aCataloguetgi_eww_redirect NOOP
+add responder policy pRedir_to_GITCatalog_eww "HTTP.REQ.HOSTNAME.EQ(\"gitcatalog.snclavalin.com\") || HTTP.REQ.HOSTNAME.EQ(\"gitcatalog.\")" aGitCatalog_eww_redirect NOOP
+add responder policy pRedir_142.242.14.235 "HTTP.REQ.HOSTNAME.EQ(\"142.242.14.194\")" aGenericDown RESET
+add responder policy pNoCSC "HTTP.REQ.HOSTNAME.EQ(\"nocsc.snclavalin.com\") || HTTP.REQ.HOSTNAME.EQ(\"nocsc.\")" aNoCSC NOOP
+add responder policy pNoCSB "HTTP.REQ.HOSTNAME.EQ(\"nocsb.snclavalin.com\") || HTTP.REQ.HOSTNAME.EQ(\"nocsb.\")" aNoCSB NOOP
+add responder policy pRedirSlcAga_HTTP "HTTP.REQ.HOSTNAME.EQ(\"slcaga.snclavalin.com\") || HTTP.REQ.HOSTNAME.EQ(\"slcaga.\")" aRedirtoslcapps
+add responder policy pRedirAga_http "HTTP.REQ.HOSTNAME.EQ(\"aga.snclavalin.com\") || HTTP.REQ.HOSTNAME.EQ(\"aga.\")" aRedirtoapps
+add responder policy pHttps_to_http HTTP.REQ.IS_VALID aHttps_to_http
+add responder policy pRedir_eww2_Communications "HTTP.REQ.HOSTNAME.EQ(\"communications.snclavalin.com\") || HTTP.REQ.HOSTNAME.EQ(\"communications\")" aRedirtoeww2_Comm
+add responder policy p14224214236 "HTTP.REQ.HOSTNAME.EQ(\"142.242.14.236\")" aResetConnection
+add responder policy pRedireuAga_SSL "HTTP.REQ.HOSTNAME.EQ(\"euaga.snclavalin.com\")" aRedirtoeuapps
+add responder policy pRedireuAga_HTTP "HTTP.REQ.HOSTNAME.EQ(\"euaga.snclavalin.com\") || HTTP.REQ.HOSTNAME.EQ(\"euaga.\")" aRedirtoeuapps
+add responder policy pTGIRedir "HTTP.REQ.HOSTNAME.EQ(\"tgi.snclavalin.com\") || HTTP.REQ.HOSTNAME.EQ(\"tgi.\")" aTGIRedir
+add responder policy pGITRedir "HTTP.REQ.HOSTNAME.EQ(\"git.snclavalin.com\") || HTTP.REQ.HOSTNAME.EQ(\"git.\")" aGITRedir
+add responder policy pRedir_to_TGIContacts "HTTP.REQ.HOSTNAME.EQ(\"tgicontacts.snclavalin.com\") || HTTP.REQ.HOSTNAME.EQ(\"tgicontacts.\")" aRedirect_to_TGIContacts NOOP
+add responder policy pRedir_to_GITContacts "HTTP.REQ.HOSTNAME.EQ(\"gitcontacts.snclavalin.com\") || HTTP.REQ.HOSTNAME.EQ(\"gitcontacts.\")" aRedirect_to_GITContacts NOOP
+add responder policy pPDMMaintenance "HTTP.REQ.HOSTNAME.EQ(\"nopdm.snclavalin.com\")" aNoPDM NOOP
+add responder policy pITCatalog_Redirect "HTTP.REQ.HOSTNAME.EQ(\"itcatalog.snclavalin.com\")" aITCatalog_Redirect
+add responder policy pCatalogueTI_Redirect "HTTP.REQ.HOSTNAME.EQ(\"catalogueti.snclavalin.com\")" aCatalogueTI_Redirect
+add responder policy pHttp_to_https HTTP.REQ.IS_VALID aHttp_to_https
+add responder policy pGPSpre_newHTTPconnexion "HTTP.REQ.URL.PATH.EQ(\"/\")" aRedirectTogpspreSSLLogin
+add responder policy pGPSpre_newSSLconnexion "HTTP.REQ.URL.PATH.EQ(\"/\")" aRedirectTogpspreSSLLogin
+add responder policy pGPS_newSSLconnexion "HTTP.REQ.URL.PATH.EQ(\"/\")" aRedirectToGPSSSLLogin
+add responder policy pGPS_newHTTPconnexion "HTTP.REQ.URL.PATH.EQ(\"/\")" aRedirectToGPSSSLLogin
+add responder policy pNoebs_inInfozone "HTTP.REQ.HOSTNAME.EQ(\"eww.snclavalin.com\") && HTTP.REQ.URL.EQ(\"/noebs/\")" aRespond_noebs
+add responder policy pStay_here "HTTP.REQ.URL.CONTAINS(\"EForms\")" aStay_Here_
+add responder policy pNoTimesheet_EN "HTTP.REQ.URL.SET_TEXT_MODE(IGNORECASE).CONTAINS(\"EForms-Eng\")" aNoTimesheet_EN
+add responder policy pNoTimesheet_FR "HTTP.REQ.URL.SET_TEXT_MODE(IGNORECASE).CONTAINS(\"EForms-Fra\")" aNoTimesheet_FR NOOP
+add responder policy pGitCat_Redirect_FR "HTTP.REQ.URL.CONTAINS(\"GIT_Serv_catalog_Fr\")  && !HTTP.REQ.URL.CONTAINS(\"Fr/Formulaires\")" aCsb_Redir_FR
+add responder policy pGitCat_Redirect_EN "HTTP.REQ.URL.CONTAINS(\"git/GIT_Serv_catalog\")  && !HTTP.REQ.URL.CONTAINS(\"Fr/Formulaires\")  && !HTTP.REQ.URL.CONTAINS(\"_FR\" )" aCsb_Redir_EN
+add responder policy pGitCat_Redirect_EN_2 "HTTP.REQ.URL.CONTAINS(\"GITServiceDocumentation\")" aCsb_Redir_EN
+add responder policy pWorkday_redir TRUE aWorkday_redir
+add responder policy pCDS_Redirect "HTTP.REQ.URL.SET_TEXT_MODE(IGNORECASE).CONTAINS(\"/git/CDS\") " aCDS_Redirect
+add responder policy pCSC_GitCat_Alpha "HTTP.REQ.HOSTNAME.EQ(\"csc.snclavalin.com\") && HTTP.REQ.URL.CONTAINS(\"/git/GIT_Serv_catalog/Lists/Services/All Services in alphabetical order.aspx\")" aCSCGitCat_Alpha_redir
+add responder policy pCSC_GitCat_Alpha_FR "HTTP.REQ.HOSTNAME.EQ(\"csc.snclavalin.com\") && HTTP.REQ.URL.CONTAINS(\"/Tous les services en ordre alphabtique.aspx\")" aCSCGitCat_Alpha_redir_FR
+add responder policy pCSC_GitCat_Training "HTTP.REQ.HOSTNAME.EQ(\"csc.snclavalin.com\") && HTTP.REQ.URL.CONTAINS(\"/git/GIT_Serv_catalog/Lists/Services/Training Material.aspx\")" aCSC_GitCat_Training_redir
+add responder policy pCSC_GitCat_Training_FR "HTTP.REQ.HOSTNAME.EQ(\"csc.snclavalin.com\") && HTTP.REQ.URL.CONTAINS(\"/git/Catalogue_des_services_TGI/Lists/Services/Formation et matriel de rfrence.aspx\")" aCSC_GitCat_Training_redir_FR
+add responder policy pCSC_GitCat_Geo "HTTP.REQ.HOSTNAME.EQ(\"csc.snclavalin.com\") && HTTP.REQ.URL.CONTAINS(\"/git/GIT_Serv_catalog/Lists/Services/By geographic availability.aspx\")" aCSC_GitCat_Geo_redir
+add responder policy pCSC_GitCat_Geo_FR "HTTP.REQ.HOSTNAME.EQ(\"csc.snclavalin.com\") && HTTP.REQ.URL.CONTAINS(\"/git/Catalogue_des_services_TGI/Lists/Services/Services par disponibilit gographique.aspx\")" aCSC_GitCat_Geo_redir_FR
+add responder policy pCSC_GitCat_Mobilite_FR "HTTP.REQ.HOSTNAME.EQ(\"csc.snclavalin.com\") && HTTP.REQ.URL.CONTAINS(\"/git/Catalogue_des_services_TGI/Lists/Services/Solutions mobiles.aspx\")" aCSC_GitCat_Mobile_redir_FR
+add responder policy pCSC_CatTGI_eww_redirect "HTTP.REQ.URL.CONTAINS(\"git/Catalogue_des_services_TGI/default.aspx\") " aCataloguetgi_eww_redirect
+add responder policy pCSC_Gitcat_eww_redirect "HTTP.REQ.URL.CONTAINS(\"git/GIT_Serv_catalog/default.aspx\") " aGitCatalog_eww_redirect
+add responder policy pGPDSP_Redirect "HTTP.REQ.URL.SET_TEXT_MODE(IGNORECASE).CONTAINS(\"/sites/GPDSP\") " aGPDSP_Redirect
+add responder policy pAddOwa "HTTP.REQ.URL.EQ(\"/\")" aAddOwa
+add responder policy pPMGP_to_EUPMGP1 "HTTP.REQ.URL.CONTAINS(\"/sites/ksa_spimaco\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP20 "HTTP.REQ.URL.CONTAINS(\"/sites/vallourec_x2\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP21 "HTTP.REQ.URL.CONTAINS(\"/sites/WDCR\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP22 "HTTP.REQ.URL.CONTAINS(\"/sites/108712_grt_gaz\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP23 "HTTP.REQ.URL.CONTAINS(\"/sites/118163_RAKSAV\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP24 "HTTP.REQ.URL.CONTAINS(\"/sites/161902_smart\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP25 "HTTP.REQ.URL.CONTAINS(\"/sites/370mwtashkent\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP26 "HTTP.REQ.URL.CONTAINS(\"/sites/450067_ucb_farchim\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP27 "HTTP.REQ.URL.CONTAINS(\"/sites/701221_sasol\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP28 "HTTP.REQ.URL.CONTAINS(\"/sites/701759_foskor\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP29 "HTTP.REQ.URL.CONTAINS(\"/sites/A104\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP30 "HTTP.REQ.URL.CONTAINS(\"/sites/afriglass\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP31 "HTTP.REQ.URL.CONTAINS(\"/sites/aguas\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP32 "HTTP.REQ.URL.CONTAINS(\"/sites/alta_velocidad\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP33 "HTTP.REQ.URL.CONTAINS(\"/sites/andros_la_serna\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP34 "HTTP.REQ.URL.CONTAINS(\"/sites/arkema_eak2\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP35 "HTTP.REQ.URL.CONTAINS(\"/sites/cg_2\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP36 "HTTP.REQ.URL.CONTAINS(\"/sites/COE\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP37 "HTTP.REQ.URL.CONTAINS(\"/sites/direccion_general\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP38 "HTTP.REQ.URL.CONTAINS(\"/sites/dpto_obras\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP39 "HTTP.REQ.URL.CONTAINS(\"/sites/fluxys_loenhout\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP40 "HTTP.REQ.URL.CONTAINS(\"/sites/full_image\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP41 "HTTP.REQ.URL.CONTAINS(\"/sites/goc_api_2013\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP42 "HTTP.REQ.URL.CONTAINS(\"/sites/jifco\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP43 "HTTP.REQ.URL.CONTAINS(\"/support/PDM_Site_Nitex_Improvement2\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP44 "HTTP.REQ.URL.CONTAINS(\"/sites/musee_nogent\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP45 "HTTP.REQ.URL.CONTAINS(\"/sites/rd901\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP46 "HTTP.REQ.URL.CONTAINS(\"/sites/lavage_gaz\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP47 "HTTP.REQ.URL.CONTAINS(\"/sites/c4c\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP48 "HTTP.REQ.URL.CONTAINS(\"/sites/ppp_gare_mpl\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP49 "HTTP.REQ.URL.CONTAINS(\"/sites/tramwayt3\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP50 "HTTP.REQ.URL.CONTAINS(\"/sites/imacid\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP51 "HTTP.REQ.URL.CONTAINS(\"/sites/andra\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP52 "HTTP.REQ.URL.CONTAINS(\"/sites/orlen\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP53 "HTTP.REQ.URL.CONTAINS(\"/sites/pivert\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP54 "HTTP.REQ.URL.CONTAINS(\"/sites/sunkar\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP55 "HTTP.REQ.URL.CONTAINS(\"/sites/Loreal_Eva\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP56 "HTTP.REQ.URL.CONTAINS(\"/sites/GP_ligne_rouge\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP57 "HTTP.REQ.URL.CONTAINS(\"/sites/zae_morangis\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP58 "HTTP.REQ.URL.CONTAINS(\"/sites/katanga_phase_3\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP59 "HTTP.REQ.URL.CONTAINS(\"/sites/agasx\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP60 "HTTP.REQ.URL.CONTAINS(\"/sites/kamoto\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP61 "HTTP.REQ.URL.CONTAINS(\"/sites/ncs\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP62 "HTTP.REQ.URL.CONTAINS(\"/sites/zimasco\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP63 "HTTP.REQ.URL.CONTAINS(\"/sites/eti\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP64 "HTTP.REQ.URL.CONTAINS(\"/sites/enrc\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP65 "HTTP.REQ.URL.CONTAINS(\"/sites/foskor\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP66 "HTTP.REQ.URL.CONTAINS(\"/sites/AGA\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP67 "HTTP.REQ.URL.CONTAINS(\"/sites/150134\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP68 "HTTP.REQ.URL.CONTAINS(\"/sites/chokwe\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP69 "HTTP.REQ.URL.CONTAINS(\"/sites/ambat/\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP70 "HTTP.REQ.URL.CONTAINS(\"/sites/mkuju\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP71 "HTTP.REQ.URL.CONTAINS(\"/sites/rtre\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP72 "HTTP.REQ.URL.CONTAINS(\"/sites/coega\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP73 "HTTP.REQ.URL.CONTAINS(\"/sites/nitro\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP74 "HTTP.REQ.URL.CONTAINS(\"/sites/sab\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP2 "HTTP.REQ.URL.CONTAINS(\"/sites/ldc-l\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP3 "HTTP.REQ.URL.CONTAINS(\"/sites/lgvlot35\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP4 "HTTP.REQ.URL.CONTAINS(\"/sites/lng_huelva\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP5 "HTTP.REQ.URL.CONTAINS(\"/sites/maap_pole_varenne\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP6 "HTTP.REQ.URL.CONTAINS(\"/sites/mayotte\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP7 "HTTP.REQ.URL.CONTAINS(\"/sites/michelin_log\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP8 "HTTP.REQ.URL.CONTAINS(\"/sites/moe_rd36\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP9 "HTTP.REQ.URL.CONTAINS(\"/sites/mp3mp4\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP10 "HTTP.REQ.URL.CONTAINS(\"/sites/omya_kaluga\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP11 "HTTP.REQ.URL.CONTAINS(\"/sites/pfizer_animal_health\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP12 "HTTP.REQ.URL.CONTAINS(\"/sites/poste_louvre\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP13 "HTTP.REQ.URL.CONTAINS(\"/sites/psa_tremery\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP14 "HTTP.REQ.URL.CONTAINS(\"/sites/psa_val_dct\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP15 "HTTP.REQ.URL.CONTAINS(\"/sites/puy_de_dome\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP16 "HTTP.REQ.URL.CONTAINS(\"/sites/renouveau\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP17 "HTTP.REQ.URL.CONTAINS(\"/sites/tcsp_perpignan\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP18 "HTTP.REQ.URL.CONTAINS(\"/sites/tram_avignon\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP19 "HTTP.REQ.URL.CONTAINS(\"/sites/uralchem\")" aPMGP_to_EUPMGP
+add responder policy pPMGP_to_EUPMGP2_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/ldc-l\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP3_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/lgvlot35\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP4_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/lng_huelva\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP5_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/maap_pole_varenne\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP6_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/mayotte\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP7_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/michelin_log\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP8_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/moe_rd36\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP9_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/mp3mp4\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP10_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/omya_kaluga\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP11_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/pfizer_animal_health\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP12_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/poste_louvre\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP13_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/psa_tremery\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP14_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/psa_val_dct\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP15_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/puy_de_dome\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP16_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/renouveau\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP17_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/tcsp_perpignan\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP18_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/tram_avignon\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP19_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/uralchem\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP20_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/vallourec_x2\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP21_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/WDCR\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP22_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/108712_grt_gaz\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP23_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/118163_RAKSAV\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP24_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/161902_smart\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP25_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/370mwtashkent\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP26_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/450067_ucb_farchim\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP27_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/701221_sasol\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP28_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/701759_foskor\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP29_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/A104\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP30_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/afriglass\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP31_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/aguas\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP32_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/alta_velocidad\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP33_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/andros_la_serna\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP34_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/arkema_eak2\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP35_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/cg_2\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP36_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/COE\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP37_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/direccion_general\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP38_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/dpto_obras\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP39_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/fluxys_loenhout\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP40_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/full_image\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP41_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/goc_api_2013\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP42_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/jifco\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP43_HTTP "HTTP.REQ.URL.CONTAINS(\"/support/PDM_Site_Nitex_Improvement2\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP44_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/musee_nogent\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP45_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/rd901\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP46_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/lavage_gaz\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP47_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/c4c\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP48_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/ppp_gare_mpl\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP49_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/tramwayt3\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP50_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/imacid\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP51_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/andra\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP52_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/orlen\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP53_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/pivert\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP54_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/sunkar\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP55_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/Loreal_Eva\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP56_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/GP_ligne_rouge\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP57_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/zae_morangis\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP58_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/katanga_phase_3\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP59_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/agasx\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP60_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/kamoto\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP61_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/ncs\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP62_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/zimasco\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP63_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/eti\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP64_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/enrc\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP65_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/foskor\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP66_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/AGA\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP67_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/150134\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP68_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/chokwe\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP69_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/ambat\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP70_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/mkuju\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP71_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/rtre\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP72_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/coega\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP73_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/nitro\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP74_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/sab\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_to_EUPMGP1_HTTP "HTTP.REQ.URL.CONTAINS(\"/sites/ksa_spimaco\")" aPMGP_to_EUPMGP_http
+add responder policy pPMGP_http_to_https "HTTP.REQ.IS_VALID &&  ! CLIENT.IP.SRC.EQ(142.242.5.132)" aHttp_to_https
+add responder policy pAddRPC "HTTP.REQ.URL.EQ(\"/\")" aAddRPC
+add responder policy pAdd_ess "HTTP.REQ.URL.EQ(\"/\")" aAccpac_AddEss
+add responder policy pGPSMaintenance "CLIENT.IP.SRC.IN_SUBNET(10.0.0.0/8).NOT" aGPS_Maintenance
+add responder policy pCitrixLogonPoint_redirect "HTTP.REQ.URL.CONTAINS(\"CitrixLogonPoint\")" aCitrixLogonPoint_redirect
+add responder policy pSuiveznous_redirect "HTTP.REQ.HOSTNAME.EQ(\"suiveznous.snclavalin.com\")" aSuiveznous_Redirect
+add responder policy pFollowus_redirect "HTTP.REQ.HOSTNAME.EQ(\"followus.snclavalin.com\")" aFollowus_redirect
+add responder policy pIndexPHPEN_redirect "HTTP.REQ.URL.AFTER_STR(\"/\").CONTAINS(\"php?lang=en\") && HTTP.REQ.URL.STARTSWITH(\"/comms_\").NOT" aIndexPhpEN_redirect
+add responder policy pIndexphpFR_redirect "HTTP.REQ.URL.AFTER_STR(\"/\").CONTAINS(\"php?lang=fr\") && HTTP.REQ.URL.STARTSWITH(\"/comms_\").NOT" aIndexphpFR_redirect
+add responder policy pwwwRoot_redirect "HTTP.REQ.URL.EQ(\"/\")" aChooselanguage
+add responder policy pPHP_RedirAll "HTTP.REQ.URL.AFTER_STR(\"/\").CONTAINS(\".php\") && HTTP.REQ.URL.STARTSWITH(\"/comms_\").NOT" aPHP_RedirAll
+add responder policy pwecareRedirect_EN "HTTP.REQ.URL.EQ(\"/wecare.php?lang=en\")" aWecareRedirect_EN
+add responder policy pWecareRedirect_FR "HTTP.REQ.URL.EQ(\"/wecaew.php?lang=fr\")" aWecareRedirect_FR
+add responder policy pComms_introRedirect "HTTP.REQ.URL.STARTSWITH_ANY(\"psComms_php\")" aCommsintro_redirect
+add responder policy pWelcomeredirect "HTTP.REQ.URL.EQ(\"/welcome/\") || HTTP.REQ.URL.EQ(\"/welcome\")" aWelcomeRedirect
+add responder policy pAddEss_http "HTTP.REQ.URL.EQ(\"/\")" aAddess_http
+add responder policy pAddEndigSlash "HTTP.REQ.URL.EQ(\"/en\") || HTTP.REQ.URL.EQ(\"/fr\")" "a AddEndingSlash"
+add responder policy pWWW_Environment "HTTP.REQ.URL.EQ(\"/environment\") || HTTP.REQ.URL.EQ(\"/environment/\")" aEnvironment_redirect
+add responder policy pnoWWW "HTTP.REQ.HOSTNAME.EQ(\"snclavalin.com\")" awwwedirect
+add responder policy pCSC_coppst_redir "HTTP.REQ.URL.CONTAINS(\"/pip/coppst\")" aCSC_coppst_redir
+add responder policy pRedirectNonIntegrated " HTTP.REQ.HEADER(\"Cookie\").CONTAINS(\"Integrated=False\") &&  HTTP.REQ.FULL_HEADER.CONTAINS(\"401 Access Denied\")" aRespondWithNotAllowed
+add responder policy pEww_projects "HTTP.REQ.URL.EQ(\"/projects\") || HTTP.REQ.URL.EQ(\"/projects/\")" "a EWW_projects"
+add responder policy pEWW_projets "HTTP.REQ.URL.EQ(\"/projets\") || HTTP.REQ.URL.EQ(\"/projets/\") " aEww_projets
+add responder policy pEWW_followus "HTTP.REQ.URL.EQ(\"/followus\") || HTTP.REQ.URL.EQ(\"/followus/\") " aEww_followus
+add responder policy pEWW_suiveznous "HTTP.REQ.URL.EQ(\"/suiveznous\") || HTTP.REQ.URL.EQ(\"/suiveznous/\") " aEww_suiveznous
+add responder policy pEWW_nourl_IE "HTTP.REQ.URL.eq(\"/\") &&  HTTP.REQ.HEADER(\"User-Agent\").SET_TEXT_MODE(IGNORECASE).CONTAINS(\"MSIE\")" aChooselanguage
+add responder policy pEWW_nourl_NotIE "HTTP.REQ.URL.eq(\"/\") && HTTP.REQ.HEADER(\"User-Agent\").SET_TEXT_MODE(IGNORECASE).CONTAINS(\"MSIE\").NOT" aChooselanguage_notIE
+add responder policy pWWW_Mining "HTTP.REQ.URL.eq(\"/mining\") ||  HTTP.REQ.URL.eq(\"/mining/\")" awww_mining_redirect
+add responder policy pOurProjects "HTTP.REQ.HOSTNAME.EQ(\"ourprojects.snclavalin.com\")" aOurProjects
+add responder policy pNosProjets "HTTP.REQ.HOSTNAME.EQ(\"nosprojets.snclavalin.com\")" aNosProjets
+add responder policy pEthics_en "HTTP.REQ.URL.STARTSWITH(\"/ethics\")" aEthics_en_redir
+add responder policy pEthics_fr "HTTP.REQ.URL.STARTSWITH(\"/ethique\")" aEthics_fr_redir
+add responder policy pGotoPower "HTTP.REQ.URL.STARTSWITH(\"/power\")" aEww_power
+add responder policy pGotoEnergie "HTTP.REQ.URL.EQ(\"/energie\")" aEww_GotoEnergie
+add responder policy pNuclear "HTTP.REQ.URL.STARTSWITH(\"/nuclear\")" aNuclear
+add responder policy pEnergieNucleaire "HTTP.REQ.URL.STARTSWITH(\"/energie-nucleaire\")" aEnergieNucleaire
+add responder policy pWWW_Environnement "HTTP.REQ.URL.STARTSWITH(\"/environnement\")" aEnvironnement_redirect
+add responder policy pWWW_Capital_EN "HTTP.REQ.URL.STARTSWITH(\"/capital/en\")" aSDL_capital_EN
+add responder policy pWWW_Capital_FR "HTTP.REQ.URL.STARTSWITH(\"/capital/fr\")" aSDL_capital_FR
+add responder policy pWWW_Capital "HTTP.REQ.URL.STARTSWITH(\"/capital\") && HTTP.REQ.URL.CONTAINS(\"/en\").NOT && HTTP.REQ.URL.CONTAINS(\"/fr\").NOT" aSDL_capital_EN
+add responder policy pEww_http_https HTTP.REQ.IS_VALID aEWW_http_https
+add responder policy pWWW_Candu "http.REQ.URL.Startswith(\"/candu\")" awww_candu2nuclear
+add responder policy pWWW_nucleaire "http.REQ.URL.Startswith(\"/nucleaire\")" awww_nucleaire2energienucleaire
+add responder policy pAddfqdn_snc "HTTP.REQ.HOSTNAME.CONTAINS(\"snclavalin.com\").NOT" aAdd_snclavalinFQDN
+add responder policy pWWW_Romania "HTTP.REQ.URL.STARTSWITH(\"/romania\")" aWWW_Romania
+add responder policy pKentz_Ethics "HTTP.REQ.URL.STARTSWITH(\"/ethics-compliance_en.asp\")" aKentz_ethic
+add responder policy pKentz_redirect_eww HTTP.REQ.IS_VALID aKentz_redirect_eww
+add responder policy pWWW_gts_redirect "HTTP.REQ.URL.STARTSWITH(\"/gts\") && HTTP.REQ.HEADER(\"User-Agent\").SET_TEXT_MODE(IGNORECASE).CONTAINS(\"MSIE\")" aChooselanguage_gts
+add responder policy "pWWW_gts_redirect_not IE" "HTTP.REQ.URL.STARTSWITH(\"/gts\") && HTTP.REQ.HEADER(\"User-Agent\").SET_TEXT_MODE(IGNORECASE).CONTAINS(\"MSIE\").NOT" aChooselanguage_gts_notIE
+add responder policy peww_annual_report_en "http.REQ.URL.Startswith(\"/2014-annual-report\")" aAnnualRepport2014_en_redir
+add responder policy peww_annual_report_fr "http.REQ.URL.Startswith(\"/rapport-annuel-2014\")" aAnnualRepport2014_fr_redir
+add responder policy pEDMS_newHTTPconnexion "HTTP.REQ.URL.PATH.STARTSWITH(\"/cp\").NOT" aEDMS_redir
+add responder policy pPCMS_newHTTPconnexion "HTTP.REQ.URL.PATH.STARTSWITH(\"/ecosys\").NOT" aPCMS_redir
+add responder policy pVideozoneRedir "HTTP.REQ.HOSTNAME.EQ(\"videozone.snclavalin.com\") ||  HTTP.REQ.HOSTNAME.EQ(\"videozone.\")" aVideozoneRedir
+add responder policy pInfoFinanceRedirect HTTP.REQ.IS_VALID aInfofinanceRedirect
+add responder policy pGastech2015 "HTTP.REQ.URL.STARTSWITH(\"/gastech2015\")" aGastech2015Redir
+add responder policy pRedir_BusinessResillience "HTTP.REQ.HOSTNAME.EQ(\"businessresilience.snclavalin.com\")" aRedirectToBusinessresillience
+add responder policy pRedir_911 "HTTP.REQ.HOSTNAME.EQ(\"911.snclavalin.com\")" aRedirectTo911
+add responder policy pWWW_RailTransit_EN "http.REQ.URL.Startswith(\"/rail-transit\")" aRailTransit_EN
+add responder policy pWWW_RailTransit_FR "http.REQ.URL.Startswith(\"/transports\")" aRailTransit_FR
+add responder policy pMarkview_NewConnection "HTTP.REQ.URL.EQ(\"/\")" aMarkview_redir
+add responder policy pMaintenanceCorpo_Redir HTTP.REQ.IS_VALID aMaintenanceCorpo_redir
+add responder policy pJV-Training_newHTTPconnexion "HTTP.REQ.URL.PATH.STARTSWITH(\"/LM\").NOT" aJV-Training_redir
+add responder policy pRedir_Global-elearning "HTTP.REQ.HOSTNAME.EQ(\"global-elearning.snclavalin.com\")" aRedirectGlobal-elearning
+add responder policy pRedir_GP-elearning "HTTP.REQ.HOSTNAME.EQ(\"gp-elearning.snclavalin.com\")" aRedirectGp-elearning
+add responder policy pRedir_Pmsystems "HTTP.REQ.HOSTNAME.EQ(\"pmsystems.snclavalin.com\")" aRedirectPmsystems
+add responder policy peww_alberta_to_infozone "HTTP.REQ.URL.PATH.EQ(\"/\")" aRedirect_to_TD_oil_and_gas
+add responder policy peww_alberta_to_infozone_td_power "HTTP.REQ.URL.PATH.EQ(\"/ab_td\")" aRedirect_to_TD_power
+add responder policy pSPL_Paris_redirect "HTTP.REQ.HOSTNAME.EQ(\"paris.snclavalin.com\")" aSPL_Paris_Redirect NOOP
+add responder policy pVideozoneRedirNew "HTTP.REQ.HOSTNAME.EQ(\"videozone.snclavalin.com\")" aVideozoneRedirNew
+add responder policy SharePoint_2013_https_redirect_for_sharepoint "HTTP.REQ.HEADER(\"Host\").CONTAINS(\"spltest.snclavalin.com\") && !CLIENT.SSL.IS_SSL" SharePoint_2013_http_to_https_action
+add responder policy pMaintenanceInfozone_Redir HTTP.REQ.IS_VALID aMaintenanceInfozone_redir
+add responder policy resP_CrosslinxAuth "HTTP.REQ.HOSTNAME.EQ(\"crosslinxauth.snclavalin.com\") && HTTP.REQ.URL.CONTAINS(\"/vpn/tmindex.html\")" resA_CrosslinxAuth
+add responder policy resP_concurexpense.snclavalin.com_Redirect true resA_concurexpense.snclavalin.com_Redirect
+add responder policy pRes_Protransbc_URL "HTTP.REQ.HOSTNAME.SERVER.EQ(\"protransbc.com\")||HTTP.REQ.HOSTNAME.SERVER.EQ(\"protransbc.ca\")" aRes_Protransbc -comment "EHOUG-2018-09-17 WO000000417834"
+add responder policy pEthicsRUL "HTTP.REQ.URL.SET_TEXT_MODE(IGNORECASE).IS_STRINGMAP_KEY(\"strMEthicsRUL\")&&HTTP.REQ.HOSTNAME.EQ(\"www.snclavalin.com\")" resAEthicsRUL
+add responder policy pRedirect_to_smartinvest "HTTP.REQ.HOSTNAME.EQ(\"smartinvestmentplanning.snclavalin.com\")" aRedirect_to_smartinvest
+add responder policy pRedirect_to_rehabilitation4sewers "HTTP.REQ.HOSTNAME.EQ(\"rehabilitationautomationtoolforsewers.snclavalin.com\")" aRedirect_to_rehabilitation4sewers
+add responder policy pRes_RedirectSnclavalin "HTTP.REQ.HOSTNAME.SET_TEXT_MODE(IGNORECASE).IS_STRINGMAP_KEY(\"strMsnclavalinURL\")" aRew_ReplaceSnclavalin
+add responder policy resP_HTTP_to_HTTPS HTTP.REQ.IS_VALID resA_HTTP_to_HTTPS RESET
+add responder policy pRedirectpdmc "HTTP.REQ.URL.SET_TEXT_MODE(IGNORECASE).IS_STRINGMAP_KEY(\"mRedirectpdmc\")" aRedirectpdmc
+add responder policy resP_HTTP_to_HTTPS_Enovia HTTP.REQ.IS_VALID resA_HTTP_to_HTTPS_Enovia RESET
+add responder policy resP_HTTP_to_HTTPS_8443 HTTP.REQ.IS_VALID resA_HTTP_to_HTTPS_8443 RESET
+add responder policy pRes_RedirectSnclavalin.com "HTTP.REQ.HOSTNAME.SET_TEXT_MODE(IGNORECASE).IS_STRINGMAP_KEY(\"strMsnclavalinweb\")" aRew_ReplaceSnclavalin.com
+add responder policy pRedirtwww.investors_comm "HTTP.REQ.HOSTNAME.CONTAINS(\"investors\")" aRedirtwww.investors_Comm
+add responder policy pRedirtwww.investisseurs_comm "HTTP.REQ.HOSTNAME.CONTAINS(\"investisseurs\")" aRedirtwww.investisseurs_Comm
+add responder policy pRedirtwww.qualitas_comm "HTTP.REQ.HOSTNAME.CONTAINS(\"qualitas\")" aRedirtwww.qualitas_Comm
+add responder policy pRedirtwww.pride_comm "HTTP.REQ.HOSTNAME.CONTAINS(\"pride\")" aRedirtwww.qualitas_Comm
+add responder policy pRedirtwww.fiers_comm "HTTP.REQ.HOSTNAME.CONTAINS(\"fiers\")" aRedirtwww.sncfr_Comm
+add responder policy Palberta_eww_redirect "HTTP.REQ.HOSTNAME.CONTAINS(\"eww.alberta.snclavalin.com\")" Aalberta_eww_redirect
+add responder policy Pvancouver_eww_redirect "HTTP.REQ.HOSTNAME.CONTAINS(\"eww.vancouver.snclavalin.com\")" Avancouver_eww_redirect
+add responder policy rP_pdmc_folder "HTTP.REQ.URL.PATH_AND_QUERY.SET_TEXT_MODE(IGNORECASE).SET_TEXT_MODE(NOURLENCODED).IS_STRINGMAP_KEY(\"SM_PDMC_folder\")" rA__pdmc_folder
+add responder policy pBoutique_Redirect "HTTP.REQ.HOSTNAME.EQ(\"boutique.snclavalin.com\")" aBoutique
+add responder policy ctx267027 "HTTP.REQ.URL.DECODE_USING_TEXT_MODE.CONTAINS(\"/vpns/\")&&(!CLIENT.SSLVPN.IS_SSLVPN || HTTP.REQ.URL.DECODE_USING_TEXT_MODE.CONTAINS(\"/../\"))" respondwith403
+add responder policy pWow.snclavalin.com_http "HTTP.REQ.HOSTNAME.EQ(\"wow.snclavalin.com\")" aWow.snclavalin.com_Redirect
+add responder policy Rp_Infozone "HTTP.REQ.URL.STARTSWITH(\"/exemption-tool\")&&HTTP.REQ.HOSTNAME.CONTAINS(\"infozone.snclavalin.com\")" Ra_infozone
+add responder policy pRedirect_PAS_Mainteance "HTTP.REQ.URL.CONTAINS(\"sites/corp/pas\") " aRedirect_PAS_Maintenance
+add responder policy redirect_rmt.snclavalin.com true redirect_action_rmt.snclavalin.com
+add responder policy redirect_arm.snclavalin.com "HTTP.REQ.URL.PATH.EQ(\"/\")" redirect_action_rmt.snclavalin.com
+add responder policy ppdmc_regress_2013_redirect "HTTP.REQ.URL.CONTAINS(\"Documents/testRedirection\")" pdmc_regress_2013_redirect
+add responder policy pPDMC_Redir_remwip "HTTP.REQ.URL.CONTAINS(\"infra/remwip\")" aPDMC_Redir_remwip
+add responder policy pPDMC_Redir_rem40eng "HTTP.REQ.URL.CONTAINS(\"infra/rem-40eng\")" aPDMC_Redir_rem40eng
+add responder policy pPDMC_Redir_rempub "HTTP.REQ.URL.CONTAINS(\"infra/rempub\")" aPDMC_Redir_rempub
+add responder policy pPDMC_Redir_rem60 "HTTP.REQ.URL.CONTAINS(\"infra/rem60\")" aPDMC_Redir_rem60
+add responder policy pPDMC_Redir_rem6T "HTTP.REQ.URL.CONTAINS(\"infra/rem6T\")" aPDMC_Redir_rem6T
+add responder policy pPDMC_Redir_rem601 "HTTP.REQ.URL.CONTAINS(\"infra/rem601\")" aPDMC_Redir_rem601
+add responder policy pPDMC_Redir_rem602 "HTTP.REQ.URL.CONTAINS(\"infra/rem602\")" aPDMC_Redir_rem602
+add responder policy pPDMC_Redir_rem603 "HTTP.REQ.URL.CONTAINS(\"infra/rem603\")" aPDMC_Redir_rem603
+add responder policy pPDMC_Redir_rem605 "HTTP.REQ.URL.CONTAINS(\"infra/rem605\")" aPDMC_Redir_rem605
+add responder policy pPDMC_Redir_rem606 "HTTP.REQ.URL.CONTAINS(\"infra/rem606\")" aPDMC_Redir_rem606
+add responder policy pPDMC_Redir_rem68 "HTTP.REQ.URL.CONTAINS(\"infra/rem68\")" aPDMC_Redir_rem68
+add responder policy pPDMC_Redir_pjrev "HTTP.REQ.URL.CONTAINS(\"rem/wip/pjrev\")" aPDMC_Redir_pjrev
+add responder policylabel plPMGP_to_EUPMGP_SSL
+add responder policylabel plPMGP_to_EUPMGP_HTTP
+add responder policylabel SharePoint_2013_label_redirect_forSharepoint
